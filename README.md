@@ -1,3 +1,29 @@
+Guide to run the project :
+1. create and activate virtual environment :python -m venv venv
+                                            venv\Scripts\activate
+
+2.Install required python packages: pip install django
+                                    pip install pandas
+                                    pip install openpyxl
+
+3.Apply databse migrations: python manage.py makemigrations
+                            python manage.py migrate
+
+4.Populate the Database (First-Time Setup)
+(The project includes a populate() function that reads data.xlsx and inserts all JOSAA records into the SQLite database.)
+python manage.py shell (django shell)
+run : from myapp.views import populate
+      populate()
+      exit()
+
+5. Start the development server : python manage.py runserver
+6. http://127.0.0.1:8000/  (view it here)
+
+   Good To GO!!!!
+8. 
+                     
+
+
 <img width="1875" height="1053" alt="Screenshot 2025-08-13 185809" src="https://github.com/user-attachments/assets/7027e7a0-12d0-413c-8348-ee8e06d20926" />
 <img width="1913" height="1056" alt="Screenshot 2025-08-13 185711" src="https://github.com/user-attachments/assets/454016bc-3e9e-4b30-ab9e-d2b334942239" />
 <img width="1908" height="975" alt="259436279-710004fb-1099-4d47-98ef-57970372f698" src="https://github.com/user-attachments/assets/699d7874-7926-429f-b5c4-95c31dcc3131" />
