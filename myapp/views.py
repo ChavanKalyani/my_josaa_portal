@@ -40,7 +40,7 @@ def get_academic_programs(request):
 def home(request):
     return render(request, 'myapp/home.html')
 def populate(request):
-  df = pd.read_excel('myapp/data.xlsx')
+  df = pd.read_excel('myapp/branch.xlsx')
     # Call the function with your DataFrame as an argument 
   for _, row in df.iterrows():
     institute_name = row['Institute']
