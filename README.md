@@ -6,8 +6,14 @@ Guide to run the project :
                                      pandas
                                      openpyxl
                                      razorpay
+                                     google-oauth
+                                     google-auth-oauthlib
+                                     google-api-python-client
+                                     django-allauth
+                                     oauthlib
+                                     requests
+                                     
                                     
-
 3.Apply databse migrations: python manage.py makemigrations
                             python manage.py migrate
 
