@@ -3,8 +3,10 @@ Guide to run the project :
                                             venv\Scripts\activate
 
 2.Install required python packages: pip install django
-                                    pip install pandas
-                                    pip install openpyxl
+                                     pandas
+                                     openpyxl
+                                     razorpay
+                                    
 
 3.Apply databse migrations: python manage.py makemigrations
                             python manage.py migrate
