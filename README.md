@@ -11,21 +11,17 @@ Guide to run the project :
                                      google-api-python-client
                                      django-allauth
                                      oauthlib
+                                     cryptography
                                      requests
                                      
                                     
 3.Apply databse migrations: python manage.py makemigrations
                             python manage.py migrate
 
-4.Populate the Database (First-Time Setup)
-(The project includes a populate() function that reads data.xlsx and inserts all JOSAA records into the SQLite database.)
-python manage.py shell (django shell)
-run : from myapp.views import populate
-      populate()
-      exit()
-
-5. Start the development server : python manage.py runserver
-6. http://127.0.0.1:8000/  (view it here)
+4. Start the development server : python manage.py runserver
+5. 4.Populate the Database (First-Time Setup)
+   http://127.0.0.1:8000/myapp/populate/
+7. http://127.0.0.1:8000/  (view it here)
 
    Good To GO!!!!
 8. 
